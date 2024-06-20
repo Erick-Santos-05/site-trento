@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        main h1{
+            font-size: 5em;
+        }
+        .d1{
+            display: flex;
+            flex-direction: row;
+        }
+        .d1 img{
+            width: 48%;
+            margin: 10px;
+        }
+        #d2{
+            display: flex;
+            flex-direction: row;
+        }
+        #d2 img{
+            width: 31.6%;
+            margin: 10px;
+        }
+        #d3{
+            display: flex;
+            flex-direction: column;
+        }
+        #d3 img{
+            width: 97.6%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo-trento.png" alt="Logo Trento"/>
+        <audio controls>
+            <source src="midia/audio-mp3.mp3" type="audio/mpeg"/>
+            <source src="midia/audio-ogg.ogg" type="audio/ogg"/>
+            <source src="midia/audio-wma.wma" type="audio/x-ms-wma"/>
+            Não foi possível carregar o audio.
+        </audio>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="linkEspecial" target="_self">HOME</a></li>
+                <li><a href="faleConosco.html" class="linkEspecial" target="_self">FALE CONOSCO</a></li>
+                <li><a href="https://www.facebook.com/peccinoficial" target="_blank"><img src="imagens/logo-face.png" alt="Ícone Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/peccinoficial/" target="_blank"><img src="imagens/logo-insta.png" alt="Ícone Instagram" /></a></li>
+                <li><a href="https://www.youtube.com/@trento.oficial" target="_blank"><img src="imagens/logo-youtube.png" alt="ícone Youtube"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Curta Nossa Galeria Trento!</h1>
+        <div>
+            <div class="d1">
+                <img src="imagens/imagem1.png" alt="Foto em conjunto dos tipos de trento."/>
+                <img src="imagens/imagem2.png" alt="Foto do trento allegro com suas diferentes versões."/>
+            </div>
+            <div id="d2">
+                <img src="imagens/imagem3.png" alt="Trento é trento, so experimentando pra saber!"/>
+                <img src="imagens/imagem4.png" alt="Foto trento massimo."/>
+                <img src="imagens/imagem5.png" alt="Trento, o sabor da excelência."/>
+            </div>
+            <div class="d1">
+                <img src="midia/gif_trento.gif" alt="Gif dos sabores trento."/>
+                <img src="imagens/imagem6.png" alt="#amoTrento"/>
+            </div>
+            <div id="d3">
+                <img src="imagens/imagem7.png" alt="Foto trento speciale."/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

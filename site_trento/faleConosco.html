@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Fale Conosco</title>
+    <style>
+        form>* {
+            display: block;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 30%;
+        }
+        form>label{
+            margin: 10px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+        input{
+            padding: 5px;
+            width: 90%;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        #fem, #masc, #outro{
+            padding: 0px;
+            width: 10%;
+            margin: 0px;
+            border: none;
+            border-radius: 0px;
+        }
+        .gen{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+        main p{
+            margin: 10px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            padding: 0px;
+            text-indent: 0px;
+            font-weight: 400;
+        }
+        form{
+            border: 2px solid #900C3F;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo-trento.png" alt="Logo Trento" />
+        <audio controls>
+            <source src="midia/audio-mp3.mp3" type="audio/mpeg" />
+            <source src="midia/audio-ogg.ogg" type="audio/ogg" />
+            <source src="midia/audio-wma.wma" type="audio/x-ms-wma" />
+            Não foi possível carregar o audio.
+        </audio>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="linkEspecial" target="_self">HOME</a></li>
+                <li><a href="galeria.html" class="linkEspecial" target="_self">GALERIA</a></li>
+                <li><a href="https://www.facebook.com/peccinoficial" target="_blank"><img src="imagens/logo-face.png"
+                            alt="Ícone Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/peccinoficial/" target="_blank"><img src="imagens/logo-insta.png"
+                            alt="Ícone Instagram" /></a></li>
+                <li><a href="https://www.youtube.com/@trento.oficial" target="_blank"><img
+                            src="imagens/logo-youtube.png" alt="ícone Youtube" /></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Envio-nos uma mensagem</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Primeiro nome" required/>
+            <input type="text" id="nome" name="nome" placeholder="Segundo nome" required/>
+            <p>Escolha seu gênero:</p>
+            <div>
+                <input type="radio" id="fem" name="gen"/>
+                <label for="fem"  class="gen">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" id="masc" name="gen"/>
+                <label for="masc" class="gen">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" id="outro" name="gen"/>
+                <label for="outro" class="gen">Outro</label>
+            </div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required/>
+            <label for="numero">Celular:</label>
+            <input type="number" id="numero" name="numero"/>
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="mensagem" id="mensagem" name="mensagem" placeholder="Envia uma mensagem qualquer" min="1" max="500"/>
+            <label for="arquivo">Envie um arquivo(Não Obrigatório):</label>
+            <input type="file" id="arquivo" name="arquivo"/>
+        </form>
+    </main>
+</body>
+</html>
