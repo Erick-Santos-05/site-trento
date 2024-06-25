@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Trento</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="imagens/logo-trento.png" alt="Logo Trento"/>
-        <audio controls>
-            <source src="midia/audio-mp3.mp3" type="audio/mpeg"/>
-            <source src="midia/audio-ogg.ogg" type="audio/ogg"/>
-            <source src="midia/audio-wma.wma" type="audio/x-ms-wma"/>
-            Não foi possível carregar o audio.
-        </audio>
-        <nav>
+        <div id="header1"><img src="imagens/logo-trento.png" alt="Logo Trento" id="imagemLogo"/></div>
+        <div id="header2">
+            <audio controls>
+                <source src="midia/audio-mp3.mp3" type="audio/mpeg"/>
+                <source src="midia/audio-ogg.ogg" type="audio/ogg"/>
+                <source src="midia/audio-wma.wma" type="audio/x-ms-wma"/>
+                <p>Não foi possível carregar o audio.</p>
+            </audio>
+        </div>
+        <div id="header3">
             <ul>
+                <li><a href="#" class="linkEspecial" target="_self">HOME</a></li>
                 <li><a href="faleConosco.html" class="linkEspecial" target="_self">FALE CONOSCO</a></li>
                 <li><a href="galeria.html" class="linkEspecial" target="_self">GALERIA</a></li>
                 <li><a href="https://www.facebook.com/peccinoficial" target="_blank"><img src="imagens/logo-face.png" alt="Ícone Facebook" /></a></li>
                 <li><a href="https://www.instagram.com/peccinoficial/" target="_blank"><img src="imagens/logo-insta.png" alt="Ícone Instagram" /></a></li>
                 <li><a href="https://www.youtube.com/@trento.oficial" target="_blank"><img src="imagens/logo-youtube.png" alt="ícone Youtube"/></a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <h1>A Magia do Chocolate Trento</h1>
@@ -34,7 +37,7 @@
             <div class="quad">
                 <div>
                     <h3>TRENTO BITS</h3>
-                    <img src="imagens/trento-bits.png" alt="Trento Bits">
+                    <img src="imagens/trento-bits.png" alt="Trento Bits"/>
                 </div>
                 <div>
                     <p>Descubra <strong>Trento Bits</strong>, a linha de chocolates da Ferrero que oferece pequenas explosões de sabor a cada mordida. Perfeitos para quem busca uma indulgência prática e deliciosa, os Trento Bits combinam o chocolate ao leite de alta qualidade com recheios cremosos e crocantes. Esses pedacinhos são ideais para compartilhar com amigos, desfrutar como um lanche rápido ou adicionar um toque especial a sobremesas. Com Trento Bits, cada momento se transforma em uma experiência saborosa e inesquecível.</p>
@@ -43,7 +46,7 @@
             <div class="quad">
                 <div>
                     <h3>TRENTO ALLEGRO</h3>
-                    <img src="imagens/trento-allegro.png" alt="Trento Allegro">
+                    <img src="imagens/trento-allegro.png" alt="Trento Allegro"/>
                 </div>
                 <div>
                     <p>Descubra <strong>Trento Allegro</strong>, a linha de chocolates da Ferrero que combina a alegria dos sabores com a sofisticação do chocolate premium. Cada Trento Allegro é uma sinfonia de texturas e recheios cuidadosamente selecionados, envoltos em uma camada de delicioso chocolate ao leite. Perfeitos para quem busca um toque de elegância em seus momentos de indulgência, os chocolates Trento Allegro são ideais para compartilhar, presentear ou simplesmente desfrutar a qualquer hora. Experimente a harmonia perfeita entre cremosidade, crocância e sabor com Trento Allegro.</p>
@@ -52,7 +55,7 @@
             <div class="quad">
                 <div>
                     <h3>TRENTO</h3>
-                    <img src="imagens/trento.png" alt="Trento">
+                    <img src="imagens/trento.png" alt="Trento"/>
                 </div>
                 <div>
                     <p>Conheça o <strong>Trento Original</strong>, o clássico chocolate da Ferrero que conquista paladares com sua combinação perfeita de crocância e cremosidade. Este delicioso chocolate é composto por uma generosa barra de chocolate ao leite, recheada com um creme irresistível e pedaços crocantes que proporcionam uma experiência única a cada mordida. Ideal para uma pausa indulgente ou para compartilhar momentos especiais, o Trento Original é a escolha perfeita para os amantes de chocolate que apreciam a qualidade e o sabor inigualável da Ferrero.</p>
@@ -61,7 +64,7 @@
             <div class="quad">
                 <div>
                     <h3>TRENTO SPECIALE</h3>
-                    <img src="imagens/trento-speciale.png" alt="Trento Speciale">
+                    <img src="imagens/trento-speciale.png" alt="Trento Speciale"/>
                 </div>
                 <div>
                     <p>Descubra a perfeição em forma de chocolate com <strong>Trento Speciale</strong> da Ferrero. Cada peça é uma obra-prima de indulgência, combinando camadas de chocolate ao leite premium com recheios exclusivos e texturas irresistíveis. Ideal para momentos de deleite pessoal ou presentear alguém especial, Trento Speciale oferece uma experiência sensorial única que combina tradição artesanal italiana com ingredientes da mais alta qualidade.</p>
@@ -69,38 +72,45 @@
             </div>
             <div class="quad">
                 <div>
-                    <h3>TRENTO MINI</h3>
-                    <img src="imagens/trento-mini.png" alt="Trento Mini">
-                </div>
-                <div>
-                    <p>Conheça <strong>Trento Mini</strong>, a versão compacta do clássico chocolate da Ferrero. Cada Trento Mini é uma pequena maravilha de sabor, combinando o delicioso chocolate ao leite com recheios cremosos e texturas crocantes em um formato conveniente e portátil. Ideal para compartilhar com amigos, desfrutar como um lanche rápido ou levar com você para qualquer lugar, Trento Mini oferece a mesma qualidade e prazer do Trento original em um tamanho perfeito para qualquer ocasião. Saboreie a excelência do chocolate Ferrero a qualquer momento com Trento Mini.</p>
-                </div>
-            </div>
-            <div class="quad">
-                <div>
                     <h3>TRENTO MASSIMO</h3>
-                    <img src="imagens/trento-massimo.png" alt="Trento Massimo">
+                    <img src="imagens/trento-massimo.png" alt="Trento Massimo"/>
                 </div>
                 <div>
                     <p>Descubra <strong>Trento Massimo</strong>, uma linha de chocolates da Ferrero que combina camadas abundantes de chocolate ao leite com recheios cremosos e pedaços crocantes. Cada mordida oferece uma indulgência única e sofisticada, ideal para quem aprecia o melhor em qualidade e sabor. Trento Massimo é perfeito para momentos especiais e celebrações, elevando o prazer do chocolate a um nível superior de indulgência gourmet.</p>
                 </div>
             </div>
+            <div class="quad">
+                <div>
+                    <h3>TRENTO MINI</h3>
+                    <img src="imagens/trento-mini.png" alt="Trento Mini"/>
+                </div>
+                <div>
+                    <p>Conheça <strong>Trento Mini</strong>, a versão compacta do clássico chocolate da Ferrero. Cada Trento Mini é uma pequena maravilha de sabor, combinando o delicioso chocolate ao leite com recheios cremosos e texturas crocantes em um formato conveniente e portátil. Ideal para compartilhar com amigos, desfrutar como um lanche rápido ou levar com você para qualquer lugar, Trento Mini oferece a mesma qualidade e prazer do Trento original em um tamanho perfeito para qualquer ocasião. Saboreie a excelência do chocolate Ferrero a qualquer momento com Trento Mini.</p>
+                </div>
+            </div>
         </section>
         <section id="video">
             <div class="mensagemVideo">
-                <h2>Delicie-se com o Melhor Chocolate Gourmet!</h2>
+                <h2 style="color: #fff;">Delicie-se com o Melhor Chocolate Gourmet!</h2>
             </div>
             <video controls  poster="midia/poster.jpg">
                 <source src="midia/Trento (720p).mp4" type="video/mp4"/>
                 <source src="midia/Trento-_720p_.m4v" type="video/mp4"/>
                 <source src="midia/Trento-_720p_.webm" type="video/webm"/>
                 <source src="midia/Trento-_720p_.ogv" type="video/ogg"/>
-                Não foi possível carregar o vídeo.
+                <p>Não foi possível carregar o vídeo.</p>
             </video>
         </section>
         <section id="video2">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/X4rgcFF2q1s?si=0-7QLdYVe44va2gM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
+    <footer>
+        <div id="barra">
+            <img src="imagens/logo-trento.png" alt="Logo Trento"/>
+            <hr/>
+            <p>&copy; 2024 TRENTO. TODOS OS DIREITOS RESERVADOS.</p>
+        </div>
+    </footer>
 </body>
 </html>

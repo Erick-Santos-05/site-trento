@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <style>
         main h1{
@@ -38,22 +38,25 @@
 </head>
 <body>
     <header>
-        <img src="imagens/logo-trento.png" alt="Logo Trento"/>
-        <audio controls>
-            <source src="midia/audio-mp3.mp3" type="audio/mpeg"/>
-            <source src="midia/audio-ogg.ogg" type="audio/ogg"/>
-            <source src="midia/audio-wma.wma" type="audio/x-ms-wma"/>
-            Não foi possível carregar o audio.
-        </audio>
-        <nav>
+        <div id="header1"><img src="imagens/logo-trento.png" alt="Logo Trento" id="imagemLogo"/></div>
+        <div id="header2">
+            <audio controls>
+                <source src="midia/audio-mp3.mp3" type="audio/mpeg"/>
+                <source src="midia/audio-ogg.ogg" type="audio/ogg"/>
+                <source src="midia/audio-wma.wma" type="audio/x-ms-wma"/>
+                <p>Não foi possível carregar o audio.</p>
+            </audio>
+        </div>
+        <div id="header3">
             <ul>
                 <li><a href="index.html" class="linkEspecial" target="_self">HOME</a></li>
                 <li><a href="faleConosco.html" class="linkEspecial" target="_self">FALE CONOSCO</a></li>
+                <li><a href="#" class="linkEspecial" target="_self">GALERIA</a></li>
                 <li><a href="https://www.facebook.com/peccinoficial" target="_blank"><img src="imagens/logo-face.png" alt="Ícone Facebook" /></a></li>
                 <li><a href="https://www.instagram.com/peccinoficial/" target="_blank"><img src="imagens/logo-insta.png" alt="Ícone Instagram" /></a></li>
                 <li><a href="https://www.youtube.com/@trento.oficial" target="_blank"><img src="imagens/logo-youtube.png" alt="ícone Youtube"/></a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <h1>Curta Nossa Galeria Trento!</h1>
@@ -76,5 +79,12 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div id="barra">
+            <img src="imagens/logo-trento.png" alt="Logo Trento"/>
+            <hr/>
+            <p>&copy; 2024 TRENTO. TODOS OS DIREITOS RESERVADOS.</p>
+        </div>
+    </footer>
 </body>
 </html>
