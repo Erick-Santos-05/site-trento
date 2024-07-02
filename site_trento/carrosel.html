@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        ul {
+            height: 500px;
+            width: 100%;
+            list-style: none;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+
+        ul::-webkit-scrollbar {
+            display: none;
+        }
+
+        li {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+        }
+
+        li:nth-child(1) {
+            background-color: yellow;
+        }
+
+        li:nth-child(2) {
+            background-color: green;
+        }
+
+        li:nth-child(3) {
+            background-color: red;
+        }
+
+        li:nth-child(4) {
+            background-color: blue;
+        }
+
+        li:nth-child(5) {
+            background-color: purple;
+        }
+        .botao{
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .botao>button{
+            margin: 0px 10px;
+            border: none;
+            padding: 10px;
+            background-color: #00000068;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="botao">
+        <button class="prev" onclick="anterior()">PREV</button>
+        <button class="next" onclick="proximo()">NEXT</button>
+    </div>
+    <script>
+        const ul = document.querySelector('ul');
+        let cu = 0;
+
+        function anterior()
+        {
+            cu--;
+            if(cu<0)
+                {
+                    cu=ul.children.length-1;
+                }
+            mover();
+        }
+        function proximo()
+        {
+            cu++;
+            if(cu>=ul.children.length)
+                {
+                    cu=0;
+                }
+            mover()
+        }
+        function mover() {
+
+            ul.scrollTo({
+                left: cu * window.innerWidth,
+                behavior: 'smooth'
+            });
+        }
+
+        setInterval(proximo, 5000);
+
+        
+    </script>
+</body>
+
+</html>

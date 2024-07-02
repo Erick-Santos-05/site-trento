@@ -9,8 +9,9 @@
 </head>
 <body>
     <header>
-        <div id="header1"><img src="imagens/logo-trento.png" alt="Logo Trento" id="imagemLogo"/></div>
-        <div id="header2">
+        <div><img src="imagens/logo-trento.png" alt="Logo Trento" id="imagemLogo"/></div>
+        <div id="head2">
+            <h1>CURTA UMA MÚSICA</h1>
             <audio controls>
                 <source src="midia/audio-mp3.mp3" type="audio/mpeg"/>
                 <source src="midia/audio-ogg.ogg" type="audio/ogg"/>
@@ -18,16 +19,20 @@
                 <p>Não foi possível carregar o audio.</p>
             </audio>
         </div>
-        <div id="header3">
+        <nav>
             <ul>
                 <li><a href="#" class="linkEspecial" target="_self">HOME</a></li>
                 <li><a href="faleConosco.html" class="linkEspecial" target="_self">FALE CONOSCO</a></li>
-                <li><a href="galeria.html" class="linkEspecial" target="_self">GALERIA</a></li>
+                <ul class="ff">
+                    <li>GALERIA</li>
+                    <li><a href="galeriaImg.html" class="linkEspecial" target="_self">IMAGENS</a></li>
+                    <li><a href="galeriaVideo.html" class="linkEspecial" target="_self">VIDEO</a></li>
+                </ul>
                 <li><a href="https://www.facebook.com/peccinoficial" target="_blank"><img src="imagens/logo-face.png" alt="Ícone Facebook" /></a></li>
                 <li><a href="https://www.instagram.com/peccinoficial/" target="_blank"><img src="imagens/logo-insta.png" alt="Ícone Instagram" /></a></li>
                 <li><a href="https://www.youtube.com/@trento.oficial" target="_blank"><img src="imagens/logo-youtube.png" alt="ícone Youtube"/></a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <h1>A Magia do Chocolate Trento</h1>
@@ -100,9 +105,6 @@
                 <source src="midia/Trento-_720p_.ogv" type="video/ogg"/>
                 <p>Não foi possível carregar o vídeo.</p>
             </video>
-        </section>
-        <section id="video2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/X4rgcFF2q1s?si=0-7QLdYVe44va2gM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
     <footer>
